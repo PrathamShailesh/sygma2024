@@ -1547,36 +1547,36 @@ footer {
 
     }
     .profile-card{
-        max-width: 150px;
-        width: 95%;
-        max-height: 300px;
+        /* max-width: 150px; */
+        /* width: 95%; */
+        /* max-height: 300px; */
     }
     .profile-card-img { 
-        max-width: 150px;
-        width: 90%;
-        /* max-height: fit-content; */
-        max-height:100px;
-        /* height: ; */
+        /* max-width: 150px; */
+        /* width: 90%; */
+        
+        /* max-height:100px; */
+        
         
     }
     .profile-card a{ 
-        font-size:medium;
+        /* font-size:medium; */
         
     }
     
     .profile-name{ 
-        font-size: medium;
+        /* font-size: medium; */
         
     
     }
     .profile-designation{ 
-        font-size: small;
+        /* font-size: small; */
         
     
     }
     .profile-card-img img { 
-        /* max-width: 150px; */
-        width: 100%;
+       
+        /* width: 100%; */
     }
     .dev-heading h1{
        
