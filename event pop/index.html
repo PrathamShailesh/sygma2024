@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .event-card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .event-details-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .event-details {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 80%;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        .btn {
+    text-decoration: none;
+    position: relative;
+    top: 40px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: #4070f4;
+    /*color: #fff;*/
+    font-weight: 500;
+    border-radius: 8px;
+  }
+    </style>
+</head>
+<body>
+
+<div class="event-card" onclick="showEventDetails()">
+    <h3>Event Title</h3>
+    <p>Event Date: February 20, 2024</p>
+    <p>Location: Example Venue</p>
+</div>
+
+<div class="event-details-container" id="eventDetailsContainer">
+    <div class="event-details">
+        <a class="close-btn" onclick="closeEventDetails()">btn</a>
+        <h2>Event Title</h2>
+        <p>Event Date: February 20, 2024</p>
+        <p>Location: Example Venue</p>
+        <p>More details about the event...</p>
+    </div>
+</div>
+
+<script>
+    function showEventDetails() {
+        document.getElementById('eventDetailsContainer').style.display = 'flex';
+    }
+
+    function closeEventDetails() {
+        document.getElementById('eventDetailsContainer').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
